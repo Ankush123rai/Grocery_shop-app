@@ -24,11 +24,12 @@ const App = () => {
       <Route  path='/product/:id' element={<ProductDetails/>}/>
       <Route  path='/cart' element={<Cart/>}/>
       <Route path="/" element={<ProtectedRoutes/>}>
-        <Route  path='checkout' element={<Checkout/>}/>
+         <Route  path='checkout' element={<Checkout/>}/>
       </Route>
       <Route  path='/login' element={<Login/>}/>
       <Route  path='/signup' element={<Signup/>}/>
     </Routes>
+    <Footer />
    </BrowserRouter>
   )
 }
